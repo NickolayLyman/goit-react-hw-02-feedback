@@ -1,0 +1,21 @@
+.list {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid rgb(126, 245, 176);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(55%, 55%, 55%, 0.5);
+}
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.itemText {
+  font-weight: 600;
+  color: rgb(7, 58, 28);
+}
+.text {
+  margin-left: 8px;
+  font-weight: 400;
+  font-style: italic;
+}

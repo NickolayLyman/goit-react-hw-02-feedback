@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 
-
 import FeedbackOptions from './components/FeedbackOptions/FeedbackOptions';
 import Notification from './components/Notification/Notification';
 import Section from './components/Section/Section';
 import Statistics from './components/Statistics/Statistics';
+
+import st from './App.module.css';
 
 class App extends Component {
   state = {
@@ -31,7 +32,7 @@ class App extends Component {
     const totalAmount = this.feedbackCounter();
 
     return (
-      <>
+      <div className={st.wrapper}>
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={this.state}
@@ -50,7 +51,7 @@ class App extends Component {
             />
           )}
         </Section>
-      </>
+      </div>
     );
   }
 }
